@@ -1370,6 +1370,13 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
+@media (max-width: 768px) {
+	.tm_button {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+}
 .tm_news .news_list ul li .image:hover .main{
 	transform: scale(1.1) translateZ(0)
 }
