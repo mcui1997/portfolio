@@ -1,6 +1,6 @@
 # Michael Cui - Cybersecurity Portfolio
 
-**Live Demo:** [https://mcui1997.github.io/portfolio/](https://mcui1997.github.io/portfolio/)
+**Live Site** [https://mcui1997.github.io/portfolio/](https://mcui1997.github.io/portfolio/)
 
 ## About
 
