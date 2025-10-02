@@ -177,6 +177,8 @@ function tm_modalbox_news(){
 // -------------  MODALBOX PORTFOLIO  --------------
 // -------------------------------------------------
 
+// Add this to the tm_modalbox_portfolio function, after the existing code
+
 function tm_modalbox_portfolio(){
 	
 	"use strict";
@@ -198,6 +200,14 @@ function tm_modalbox_portfolio(){
 		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3 class="title">'+title+'</h3><span class="category"><a href="#">'+category+'</a></span></div>');	
 		tm_data_images();
 		return false;
+	});
+	
+	// NEW CODE: Close when clicking outside the box_inner
+	modalBox.on('click', function(e){
+		if(jQuery(e.target).is('.tm_modalbox')){
+			modalBox.removeClass('opened');
+			modalBox.find('.description_wrap').html('');
+		}
 	});
 }
 

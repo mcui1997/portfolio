@@ -903,7 +903,6 @@ h6 {
 
 .accordion_wrap .accordion_header h3 {
 	font-size: 17px;
-	text-transform: uppercase;
 }
 
 .accordion_wrap .accordion_content {
@@ -1264,7 +1263,7 @@ h6 {
 .tm_portfolio .portfolio_list .details {
 	position: absolute;
 	z-index: 2;
-	bottom: -100px;
+	bottom: 20px; /* Changed from -100px to 20px - now always visible */
 	left: 20px;
 	right: 20px;
 	background-color: #fff;
@@ -1298,7 +1297,8 @@ h6 {
 }
 
 .tm_portfolio .portfolio_list .list_inner:hover .details {
-	bottom: 20px;
+	bottom: 25px; /* Changed from 20px to 25px - subtle lift on hover */
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, .3); /* Enhanced shadow on hover */
 }
 
 .tm_portfolio .portfolio_list .list_inner:hover .image .main {
