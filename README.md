@@ -1,7 +1,6 @@
 # Michael Cui - Cloud Security Engineer
 
 **Portfolio Site:** [mcui1997.github.io/portfolio](https://mcui1997.github.io/portfolio/)  
-**GitHub:** [github.com/mcui1997](https://github.com/mcui1997)  
 **LinkedIn:** [linkedin.com/in/michaelcui1997](https://www.linkedin.com/in/michaelcui1997)
 
 ---
@@ -30,7 +29,7 @@ Python-based automated scanner detecting Azure misconfigurations across 50+ secu
 
 ### Security Operations & Detection
 
-**[Enterprise SIEM Deployment & Threat Detection](https://github.com/mcui1997/soc-lab)**  
+**[Enterprise SIEM Deployment & Threat Detection](https://github.com/mcui1997/azure-siem-lab)**  
 Azure-based SIEM environment with Wazuh for multi-platform log aggregation. Developed custom detection rules for MITRE ATT&CK techniques including brute force attacks, lateral movement, and privilege escalation. Simulated real-world attacks and documented investigation workflows.
 
 *Technologies: Wazuh, Azure VMs, Sysmon, MITRE ATT&CK Framework, Python*
@@ -51,10 +50,10 @@ Advanced GAN architecture for secure QR code synthesis with embedded cryptograph
 
 ## Research & Analysis
 
-**[Network Vulnerability Assessment & Remediation](https://github.com/mcui1997/vuln-assessment)**  
+**[Network Vulnerability Assessment & Remediation](https://github.com/mcui1997/network-vulnerability-analysis)**  
 Comprehensive security assessment of virtualized network infrastructure using OpenVAS. Identified 40+ vulnerabilities across DMZ, internal networks, and DNS servers with NIST-aligned remediation strategies.
 
-**[Healthcare ABAC Implementation Framework](https://github.com/mcui1997/healthcare-abac)**  
+**[Healthcare ABAC Implementation Framework](https://github.com/mcui1997/hippa-nist-gap-analysis)**  
 Enterprise cybersecurity analysis for implementing HIPAA-compliant Attribute-Based Access Control in healthcare environments. Conducted NIST 5-step gap analysis and designed Zero Trust architecture for patient data protection.
 
 ---
