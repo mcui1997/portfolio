@@ -1,9 +1,10 @@
 // All site content lives here. Edit this file to update the portfolio.
 
 export const profile = {
-  name: 'michael cui',
-  title: 'software & security engineer',
-  focus: 'solutions architecture · ai · cloud security',
+  first: 'Michael',
+  last: 'Cui',
+  title: 'Software & Security Engineer',
+  focus: ['Solutions Architecture', 'AI', 'Cloud Security'],
   photo: 'michael.jpg',
   links: {
     linkedin: 'https://www.linkedin.com/in/michaelcui1997/',
@@ -12,20 +13,21 @@ export const profile = {
 };
 
 export const about = {
-  heading: ['Translating Technical Complexity into ', 'Customer Value'],
+  // [plain part, highlighted part]
+  heading: ['I build secure systems, and help people ', 'understand them'],
   intro:
-    "I translate technical complexity into business and customer value. Software and security engineer with 4+ years at General Motors, partnering across engineering, product, and leadership teams to design scalable solutions. I've advised 10+ cross-functional teams on security architecture, led enterprise SIEM implementation using Datadog, and improved ecommerce conversion rates by 15% through technical optimization.",
+    "I'm a software and security engineer with 4+ years at General Motors, working where engineering, product, and leadership meet. I've advised 10+ cross-functional teams on security architecture, led an enterprise SIEM rollout on Datadog, and improved ecommerce conversion by 15% through technical optimization.",
   bring:
-    "Technical depth in cloud security, CI/CD pipelines, and threat modeling—combined with the ability to communicate complex concepts to any audience, from developers to executives. Whether it's conducting threat modeling workshops, presenting architecture recommendations, or guiding teams through secure implementation, I help organizations make faster, more confident technical decisions.",
+    "Depth in cloud security, CI/CD pipelines, and threat modeling, plus the ability to explain any of it to whoever is in the room: developers, product owners, or executives. I run threat modeling workshops, present architecture recommendations, and walk teams through secure implementation, so they can make faster and more confident decisions.",
   currently:
-    'Pursuing M.S. in Cybersecurity at Johns Hopkins, specializing in AI-powered threat detection | CompTIA Security+ certified',
+    'M.S. in Cybersecurity at Johns Hopkins, specializing in AI-powered threat detection · CompTIA Security+ certified',
 };
 
 export const timeline = [
-  { hash: 'a3f9e21', years: '2021–present', org: 'General Motors', role: 'Software Engineer' },
-  { hash: '7c1d04b', years: '2023–2026', org: 'Johns Hopkins University', role: 'M.S. in Cybersecurity | AI Specialization' },
-  { hash: 'e52b8a0', years: '2020–2021', org: 'Charity Studio', role: 'Software Developer' },
-  { hash: '19d6f3c', years: '2016–2021', org: 'University of Texas at Austin', role: 'B.S. in Biomedical Engineering' },
+  { years: '2021 — Present', org: 'General Motors', role: 'Software Engineer' },
+  { years: '2023 — 2026', org: 'Johns Hopkins University', role: 'M.S. in Cybersecurity | AI Specialization' },
+  { years: '2020 — 2021', org: 'Charity Studio', role: 'Software Developer' },
+  { years: '2016 — 2021', org: 'University of Texas at Austin', role: 'B.S. in Biomedical Engineering' },
 ];
 
 export const projects = [
@@ -37,9 +39,9 @@ export const projects = [
     tech: 'Terraform, Azure, GitHub Actions, Checkov',
     category: 'Cloud Infrastructure Security',
     summary:
-      'Production-ready Azure architecture demonstrating enterprise security best practices for cloud deployments. Built as a reference implementation to help teams understand and implement Zero Trust principles—including network segmentation, secrets management, and automated security scanning.',
+      'A reference Azure architecture that puts Zero Trust into practice: network segmentation, secrets management, and automated security scanning, all defined as code.',
     details:
-      'This project showcases my ability to design secure, scalable cloud solutions and explain complex security concepts clearly. Features include automated compliance validation, infrastructure-as-code patterns, and comprehensive documentation—making it a valuable tool for advisory discussions with customers evaluating cloud security strategies.',
+      "I built it as a teaching tool as much as a deployment. It pairs infrastructure-as-code patterns and automated compliance validation with documentation written for the conversation you'd have with a team deciding on its cloud security strategy.",
   },
   {
     title: 'AWS Security Assessment Framework',
@@ -49,9 +51,9 @@ export const projects = [
     tech: 'Python, boto3, Terraform, AWS SDK',
     category: 'Cloud Security & DevSecOps',
     summary:
-      'Python-based tool for rapidly assessing AWS security posture—identifying misconfigurations across S3, EC2, IAM, and VPC. Built to help teams quickly understand their security gaps and take action through automated Terraform remediation scripts.',
+      'A Python scanner that finds misconfigurations across S3, EC2, IAM, and VPC, then helps teams close the gaps with automated Terraform remediation.',
     details:
-      'Features comprehensive security assessment capabilities with automated remediation through Terraform and boto3 scripts. Generates detailed findings reports with severity ratings, risk analysis, and actionable fix recommendations. Implements multi-service scanning with parallel execution for efficient cloud security auditing at scale.',
+      'It scans services in parallel to audit accounts at scale and produces a findings report with severity ratings, risk analysis, and clear fix recommendations, so the output is something a team can act on rather than just read. Remediation runs through Terraform and boto3 scripts.',
   },
   {
     title: 'Cloud-Based SOC & SIEM Lab',
@@ -61,9 +63,9 @@ export const projects = [
     tech: 'Azure, Wazuh, Sysmon, Ubuntu, Windows Server',
     category: 'Security Operations Center',
     summary:
-      'Production-grade Security Operations Center environment deployed on Microsoft Azure featuring Wazuh SIEM for centralized threat detection and log analysis. Architected secure VNet infrastructure with three monitored endpoints running Ubuntu 22.04 and Windows Server 2022 agents, implementing File Integrity Monitoring and real-time security event correlation.',
+      'A working Security Operations Center on Azure: Wazuh SIEM centralizing logs from three monitored endpoints (Ubuntu 22.04 and Windows Server 2022) on a segmented VNet, with File Integrity Monitoring and real-time event correlation.',
     details:
-      'Developed custom detection rules for SSH brute force attacks with MITRE ATT&CK mapping (T1110.001), achieving immediate alerting within seconds of simulated credential stuffing attempts. Demonstrated advanced log analysis capabilities using Sysmon and auditd integration for comprehensive visibility across multi-platform environments with proper network segmentation and security controls.',
+      'I wrote custom detection rules for SSH brute force mapped to MITRE ATT&CK T1110.001; they alerted within seconds of simulated credential-stuffing attempts. Sysmon and auditd feed the SIEM, giving visibility across both Linux and Windows hosts.',
   },
   {
     title: 'AI Spam Detection System',
@@ -73,9 +75,9 @@ export const projects = [
     tech: 'Python, Scikit-learn, Streamlit, TF-IDF',
     category: 'Natural Language Processing',
     summary:
-      'Machine learning spam classifier utilizing Multinomial Naive Bayes with TF-IDF feature extraction for automated email and message filtering. Implements comprehensive text preprocessing pipeline including URL removal, HTML sanitization, and n-gram analysis to capture both individual words and phrase patterns.',
+      'A Multinomial Naive Bayes spam classifier built on TF-IDF features, with a preprocessing pipeline that strips URLs and HTML and uses n-grams to catch both individual words and phrases.',
     details:
-      'Developed interactive Streamlit interface with dynamic spam keyword extraction showing learned model patterns. Achieves 95-98% classification accuracy on balanced datasets through optimized hyperparameters including Laplace smoothing and strategic vocabulary filtering with 5,000 max features and bigram support.',
+      'It reaches 95–98% accuracy on balanced datasets, tuned with Laplace smoothing and a 5,000-feature vocabulary with bigram support. A Streamlit interface shows the spam keywords the model learned, so you can see why it flags what it flags.',
   },
   {
     title: 'IoT Botnet Detection System',
@@ -85,30 +87,30 @@ export const projects = [
     tech: 'Python, TensorFlow, Scikit-learn, Streamlit',
     category: 'Cybersecurity ML Research',
     summary:
-      'Comparative analysis system implementing both traditional Machine Learning and Deep Learning approaches for detecting IoT botnet behavior in network traffic. Features comprehensive data pipeline with automated preprocessing, class balancing, and feature engineering capabilities.',
+      'A side-by-side comparison of classical machine learning and deep learning for detecting IoT botnet traffic, backed by an automated pipeline for preprocessing, class balancing, and feature engineering.',
     details:
-      'Built interactive Streamlit application enabling real-time model training and testing on UNSW 2018 IoT Botnet Dataset. Achieved 85-95% accuracy with ML models using engineered features and 80-90% with DL models processing raw data, demonstrating production-viable detection rates across unseen attack patterns.',
+      "A Streamlit app lets you train and test models live on the UNSW 2018 IoT Botnet dataset. ML models with engineered features reached 85–95% accuracy and DL models on raw data reached 80–90%, holding up on attack patterns they hadn't seen.",
   },
 ];
 
 export const papers = [
   {
-    file: 'vision-transformer.pdf',
-    title: 'Vision Transformer with Few Shot Learning — Publication',
+    kind: 'Publication',
+    title: 'Vision Transformer with Few Shot Learning',
     paper: 'https://drive.google.com/file/d/18PNRFCJbhmeCsn_LwfRVt496Z7HSIWyk/view?usp=sharing',
     repo: 'vision-transformer',
-    desc: 'Explored applying Vision Transformers to network security by converting packet payloads into visual representations for attack classification. Achieved 93.30% accuracy across 9 attack types using a novel 5-channel encoding method on the CIC-IoT23 dataset. This research demonstrates that treating network traffic as images enables sophisticated computer vision techniques to effectively detect cybersecurity threats.',
+    desc: 'What if network traffic were an image? This research converts packet payloads into visual representations with a novel 5-channel encoding, then classifies attacks using a Vision Transformer. On the CIC-IoT23 dataset it reached 93.30% accuracy across 9 attack types, showing that computer vision techniques can be a practical tool for threat detection.',
   },
   {
-    file: 'hippa-nist-gap-analysis.md',
-    title: 'HIPPA NIST Gap Analysis',
+    kind: 'Gap Analysis',
+    title: 'HIPAA NIST Gap Analysis',
     repo: 'hippa-nist-gap-analysis',
-    desc: 'Enterprise cybersecurity analysis for implementing Attribute-Based Access Control (ABAC) in a hospital transplant center environment. Conducted comprehensive gap analysis using NIST Cybersecurity Framework 2.0 and NIST IR 8170 to transition from RBAC to ABAC, enhancing security for electronic health records while maintaining HIPAA compliance. Developed phased implementation strategy with risk management framework balancing patient safety, security, and privacy.',
+    desc: 'A plan for moving a hospital transplant center from role-based to attribute-based access control (RBAC → ABAC). Using NIST CSF 2.0 and NIST IR 8170, I mapped the gaps and laid out a phased rollout with a risk management framework that protects electronic health records and keeps HIPAA compliance, while balancing patient safety, security, and privacy.',
   },
   {
-    file: 'network-vulnerability-analysis.md',
+    kind: 'Vulnerability Assessment',
     title: 'Virtual Network Vulnerability Analysis',
     repo: 'network-vulnerability-analysis',
-    desc: 'Comprehensive vulnerability assessment of a virtualized network environment using OpenVAS and Kali Linux. Conducted security analysis across DMZ, internal networks, and DNS servers, identifying critical vulnerabilities including authentication weaknesses, cryptographic failures, and default credentials. Developed detailed mitigation strategies aligned with NIST, CIS, and ISO security frameworks.',
+    desc: 'A hands-on vulnerability assessment of a virtualized network using OpenVAS and Kali Linux, covering the DMZ, internal networks, and DNS servers. Findings included authentication weaknesses, cryptographic failures, and default credentials, each paired with mitigations aligned to NIST, CIS, and ISO frameworks.',
   },
 ];
