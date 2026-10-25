@@ -207,7 +207,7 @@ export default function App() {
       </main>
       <footer className="footer">
         <span>$ exit 0</span>
-        <span>© {new Date().getFullYear()} Michael Cui</span>
+        <span>© 2026 Michael Cui</span>
         <a href="#top">cd ~ ↑</a>
       </footer>
     </div>
